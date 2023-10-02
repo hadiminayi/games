@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="meno">
+        <nav>
+          <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>newo</li>
+            <li>gallery</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/mock-visual_pes2021.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/pes2018newpique_bzzt.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/pes2021_4ambassadors_1920-1080_02.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="products">
+        <div class="product">
+          <h1>hello-world</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+            placeat dolorem repellat cum necessitatibus ipsam numquam nobis in
+            est, repudiandae, corporis laudantium earum. Cupiditate animi facere
+            voluptas ipsam obcaecati id.
+          </p>
+          <img src="./img/jpt-reveal-meta.jpg" alt="" />
+        </div>
+        <div class="product">
+          <h1>hello-world</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+            placeat dolorem repellat cum necessitatibus ipsam numquam nobis in
+            est, repudiandae, corporis laudantium earum. Cupiditate animi facere
+            voluptas ipsam obcaecati id.
+          </p>
+          <img src="./img/Sam_Kerr_GEN5_SK_CROP_SOCIAL_1920x1080.jpeg" alt="" />
+        </div>
+        <div class="product">
+          <h1>hello-world</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+            placeat dolorem repellat cum necessitatibus ipsam numquam nobis in
+            est, repudiandae, corporis laudantium earum. Cupiditate animi facere
+            voluptas ipsam obcaecati id.
+          </p>
+          <img src="./img/pes2021_4ambassadors_1920-1080_02.jpg" alt="" />
+        </div>
+      </div>
+     
+      <div class="footer">
+        <h1>hadi minayi</h1>
+        <h1>web game</h1>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          corrupti suscipit atque eius, magni alias? Voluptates, minima at
+          dignissimos ex perferendis animi in adipisci. Voluptate veniam aperiam
+          totam impedit asperiores. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Aliquam soluta, rerum doloribus temporibus
+          dignissimos perspiciatis totam sed qui recusandae, distinctio,
+          sapiente dolor consectetur numquam reprehenderit accusamus. Dolore
+          commodi deserunt vel.
+        </p>
+        <p>2023.9.30 sep</p>
+      </div>
+    </div>
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+      var swiper = new Swiper(".mygams", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
